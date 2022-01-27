@@ -68,12 +68,18 @@ p {
     padding-left: 11%;
 }
 nav {
-    display: grid;
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5px;
 }
+
+.butao {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #img-wordplace {
     display: grid;
@@ -125,10 +131,12 @@ input {
 }
 
 button {
+  margin: 5px;
+  float: left;
   margin-top: 10px;
   background: #1DA1F2;
   height: 40px;
-  width: 200px;
+  width: 135px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: 900;
