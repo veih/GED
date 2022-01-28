@@ -1,0 +1,22 @@
+{
+  "name": "ged",
+  "version": "1.0.0",
+  "description": "Este gerenciador de arquivos é um modelo para meu aprendizado.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veih/GED.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veih/GED/issues"
+  },
+  "homepage": "https://github.com/veih/GED#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
