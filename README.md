@@ -1,2 +1,2 @@
 # GED
-Esta gerenciador de arquivos é modelo para aprendizado.
+Este gerenciador de arquivos é um modelo para meu aprendizado.
