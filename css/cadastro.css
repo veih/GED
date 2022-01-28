@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+  margin-left: 15%;
+  width: 900px;
   background: #ecf0f3;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   place-items: center;
-  overflow: hidden;
   font-family: poppins;
   box-sizing: border-box;
+  overflow: auto;
 } 
 
 
 .container {
-    display: grid;
+    display: inline-table;
     position: relative;
     width: 95%;
-    height: 100%;
     border-radius: 20px;
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
@@ -74,13 +72,6 @@ nav {
     margin-bottom: 5px;
 }
 
-.butao {
-  display: contents;
-  justify-content: center;
-  align-items: center;
-}
-
-
 #img-wordplace {
     display: grid;
     height: 25px;
@@ -124,18 +115,19 @@ input {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
-  height: 50px;
+  height: 40px;
   font-size: 14px;
   border-radius: 50px;
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
 button {
-  margin: 5px;
+  margin: 10px 5px 5px 25px;
   float: left;
-  margin-top: 10px;
+  margin-bottom: 15px;
+
   background: #1DA1F2;
-  height: 40px;
+  height: 35px;
   width: 135px;
   border-radius: 20px;
   cursor: pointer;
@@ -146,6 +138,7 @@ button {
 
 button:hover {
   box-shadow: none;
+  background-color: #5984bd;
 }
 
 a {
