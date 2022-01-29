@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 body {
-  margin: 0;
+  margin: 12px;
   background: #ecf0f3;
   display: flex;
   align-items: center;
@@ -99,12 +99,24 @@ input {
   border-radius: 50px;
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
+a {
+  background-color: rgb(236, 240, 243);;
+  text-decoration: none;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 20px;
+  
+}
 
 button {
+  font-size: 8px;
+  margin-left: 3px;
+  display: inline;
+  width: 80px;
   margin-top: 20px;
   background: #1DA1F2;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 13px;
   cursor: pointer;
   font-weight: 900;
   box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
@@ -114,17 +126,6 @@ button {
 button:hover {
   box-shadow: none;
   background-color: #5984bd;
-}
-
-a {
-  position: absolute;
-  font-size: 8px;
-  bottom: 4px;
-  right: 4px;
-  text-decoration: none;
-  color: black;
-  border-radius: 10px;
-  padding: 2px;
 }
 
 h1 {
