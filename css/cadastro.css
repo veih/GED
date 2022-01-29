@@ -75,24 +75,6 @@ nav {
     margin-bottom: 5px;
 }
 
-#img-wordplace {
-    display: grid;
-    height: 25px;
-    padding-right: 32px;
-    padding-bottom: 4px;
-}
-
-
-#img-office-365 {
-    display: grid;
-    height: 26px;
-    border-radius: 10px;
-    padding-bottom: 4px;
-}
-
-
-  
-
 label, input, button {
   display: block;
   width: 100%;
@@ -120,8 +102,13 @@ input {
   padding-left: 20px;
   height: 40px;
   font-size: 14px;
-  border-radius: 50px;
+  border-radius: 13px;
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+input:hover {
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
 }
 
 button {
