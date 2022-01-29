@@ -34,10 +34,11 @@ p {
 }
 
 .brand-logo {
+  margin: auto;
   height: 100px;
   width: 100px;
   background: url("");
-  margin: auto;
+  margin-bottom: 25px;
   border-radius: 50%;
   box-sizing: border-box;
   box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
@@ -52,21 +53,6 @@ p {
 }
 .brand-title p {
     margin: 0;
-}
-
-.inputs {
-  text-align: center;
-  margin-top: 5px;
-}
-
-#img-wordplace {
-    height: 44px;
-    padding-right: 194px;
-}
-#img-office-365 {
-    height: 45px;
-    padding-right: 109px;
-    border-radius: 10px;
 }
 
 label, input, button {
@@ -96,9 +82,15 @@ input {
   padding-left: 20px;
   height: 50px;
   font-size: 14px;
-  border-radius: 50px;
+  border-radius: 13px;
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
+
+input:hover {
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
 a {
   background-color: rgb(236, 240, 243);;
   text-decoration: none;
