@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+  margin-top: 1rem;
   display: inline-table;
   position: relative;
   width: 350px;
@@ -26,7 +27,7 @@ body {
 }
 
 p {
-    margin-top: -19px;
+    margin-top: 3rem;
     font-weight: 900;
     font-size: 1.8rem;
     color: #1DA1F2;
