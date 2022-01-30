@@ -137,6 +137,13 @@ button:hover {
 #img-logo-entre {
   height: 25px;
 }
+#cadastro {
+  font-size: 13px;
+  color: rgb(125, 150, 235);
+  font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 a {
   background-color: rgb(236, 240, 243);;
