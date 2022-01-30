@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 body {
-  margin-left: 15%;
+  margin-left: 5%;
   width: 750px;
   height: 95%;
   background: #ecf0f3;
-  display: flex;
+  display: inline;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -17,10 +17,12 @@ body {
 
 
 .container {
-    height: 96vh;
-    display: inline-table;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; 
     position: relative;
-    width: 90%;
+    height: 520px;
+    width: 630px;
     border-radius: 20px;
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
@@ -55,18 +57,11 @@ p {
     margin-top: 2px;
     font-weight: 900;
     font-size: 1.8rem;
-    color: #1DA1F2;
+    color: #eaf0f3;
     letter-spacing: 1px;
 }
 .brand-title p {
     margin: 0;
-}
-
-.inputs {
-    text-align: center;
-    width: 77%;
-    margin-top: 5px;
-    padding-left: 11%;
 }
 nav {
     align-items: center;
@@ -98,8 +93,7 @@ input::placeholder {
 
 input {
   background: #ecf0f3;
-  padding: 10px;
-  padding-left: 20px;
+ 
   height: 40px;
   font-size: 14px;
   border-radius: 13px;
@@ -112,10 +106,10 @@ input:hover {
 }
 
 button {
-  margin: 20px 5px 5px 20px;
+  margin: 20px 5px 5px 40px;
   float: left;
   margin-bottom: 15px;
-  background: #1DA1F2;
+  background: #f6f7f8;
   height: 35px;
   width: 110px;
   border-radius: 20px;
@@ -127,7 +121,19 @@ button {
 
 button:hover {
   box-shadow: none;
-  background-color: #5984bd;
+  background-color: #fefeff;
+}
+#img-wordplace {
+  height: 35px;
+  border-radius: 13px;
+}
+
+#img-office-365 {
+  height: 35px;
+  border-radius: 13px;
+}
+#img-logo-entre {
+  height: 25px;
 }
 
 a {
