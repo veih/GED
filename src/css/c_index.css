@@ -14,11 +14,11 @@ body {
 }
 
 .container {
-  margin-top: 1rem;
+  margin-top: -40px;
   display: inline-table;
   position: relative;
   width: 350px;
-  height: 500px;
+  height: 465px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
@@ -93,7 +93,7 @@ input:hover {
 }
 
 a {
-  background-color: rgb(236, 240, 243);;
+  background-color: #ecf0f3;
   text-decoration: none;
   margin-top: 20px;
   height: 40px;
@@ -103,12 +103,12 @@ a {
 
 button {
   font-size: 10px;
-  margin-left: 3px;
+  margin: 5px;
   display: inline;
-  width: 80px;
+  width: 75px;
   margin-top: 20px;
   background: #1DA1F2;
-  height: 40px;
+  height: 35px;
   border-radius: 13px;
   cursor: pointer;
   font-weight: 900;
@@ -121,8 +121,3 @@ button:hover {
   background-color: #5984bd;
 }
 
-h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
