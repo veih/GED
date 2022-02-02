@@ -1,24 +1,13 @@
 
 import styled from 'styled-components';
 
-export const Index = styled.div`
+export const Login = styled.div`
   p {
       margin-top: 2rem;
       font-weight: 900;
       font-size: 1.8rem;
       color: #1DA1F2;
       letter-spacing: 1px;
-  }
-
-  .brand-logo {
-    margin: auto;
-    height: 100px;
-    width: 100px;
-    background: url("");
-    margin-bottom: 25px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
   }
 
   .brand-title {
