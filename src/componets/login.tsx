@@ -21,7 +21,7 @@ export const login = () => {
                 </a> 
             </div>
         </div>
-        <script src="./script/index.js"></script>
+        
     </body> 
     );
 }
