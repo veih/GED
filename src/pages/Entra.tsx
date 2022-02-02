@@ -1,6 +1,6 @@
 import { Login } from "../styled/Login";
 
-export const Home = () => {
+export const Entra = () => {
     return (
         <Login>
             <div>

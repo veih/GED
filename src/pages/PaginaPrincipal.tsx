@@ -1,8 +1,11 @@
 
 
-export const About = () => {
+export const PaginaPrincipal = () => {
     return (
             <div>
+                <header className=''>
+                    <h1>Bem vindo ou GED </h1> 
+                </header>
                 <body>
                     <nav className="container">
                         <div className="brand-logo"></div>
