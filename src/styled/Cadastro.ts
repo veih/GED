@@ -1,17 +1,6 @@
+import styled from "styled-components";
 
-import styled from 'styled-components';
-
-export const Login = styled.div`
-
-body {
-  margin-top: 2rem;
-  background: #ecf0f3;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  place-items: center;
-  
-}
+export const Cadastro = styled.div`
 
 .container {
   margin: 2rem;
@@ -82,7 +71,5 @@ body {
   }
 
 
+
 `;
-
-
-
