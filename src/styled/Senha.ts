@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-export const Login = styled.div`
+export const Senha = styled.div`
 
 body {
   margin-top: 2rem;
