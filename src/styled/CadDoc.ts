@@ -1,9 +1,11 @@
 
 import styled from 'styled-components';
 
-export const Senha = styled.div`
+export const CadDoc = styled.div`
 
 body {
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 2rem;
   background: #ecf0f3;
   display: flex;
@@ -81,6 +83,25 @@ body {
     box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
   }
 
+  button {
+    font-size: 10px;
+    margin-left: -4px;
+    display: inline;
+    width: 80px;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+    background-color: #5984bd;
+  }
 
 `;
 

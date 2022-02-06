@@ -1,6 +1,8 @@
-import styled from "styled-components";
 
-export const Cadastro = styled.div`
+import styled from 'styled-components';
+
+export const Login = styled.div`
+
 body {
   margin-right: auto;
   margin-left: auto;
@@ -12,6 +14,7 @@ body {
   place-items: center;
   
 }
+
 .container {
   margin: 2rem;
   display: inline-table;
@@ -100,5 +103,7 @@ body {
     background-color: #5984bd;
   }
 
-
 `;
+
+
+

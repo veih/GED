@@ -1,20 +1,22 @@
+import {Routes, Route} from 'react-router-dom';
+import { PagDeLogin } from './pages/PagDeLogin';
 import { PaginaPrincipal } from './pages/PaginaPrincipal';
 import { CadastroDeClientes } from './pages/CadastroDeClientes';
 import { CadastroDeDoc } from './pages/CadastroDeDoc';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
 const App = () => {
       
   return (
-          <BrowserRouter>
-            <Routes>
-                <Route  path='/' element={<Home />} />
-                <Route  path='/sobre' element={<PaginaPrincipal />} />
-                <Route  path='/cadastro' element={<CadastroDeClientes/>} />
-                <Route  path='/doc' element={<CadastroDeDoc/>} />
-            </Routes>
-          </BrowserRouter>     
-  );
+    <div className="">
+       <Routes>
+          <Route  path='/' element={<PagDeLogin />} />
+         <Route  path='/home' element={<PaginaPrincipal />} />
+         <Route  path='/cadastro' element={<CadastroDeClientes/>} />
+          <Route path='/doc' element={<CadastroDeDoc/>}/>
+      </Routes>
+    </div>
+
+      
+  )
       
 }
 

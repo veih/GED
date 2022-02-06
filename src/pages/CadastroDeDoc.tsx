@@ -1,19 +1,17 @@
+import { Link } from "react-router-dom";
+import { CadDoc } from "../styled/CadDoc";
+
 export const CadastroDeDoc = () => {
     return (
-        <div>
+        <CadDoc>
             <nav className="container">
-        <header>
-            <div>
-                <div className="brand-title">
-                     <p>GED CADASTRO DE DOC</p>
+                <div>
+                    <div className="brand-title">
+                        <p>GED CADASTRO DE DOC</p>
                     
+                    </div>
                 </div>
-            </div>
-        </header>
-        <section>
-            
-        </section>
-    </nav>
-        </div>
+            </nav>
+        </CadDoc>
     );
 }
