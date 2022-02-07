@@ -6,20 +6,13 @@ import { CadastroDeDoc } from '../pages/CadastroDeDoc';
 import { RequireAuth } from '../pages/RequireAuth';
 
  export const MainRoute = () => {
-      return useRoutes([
-        {
-          path: '/', element:  <PagDeLogin />
-        },
-        {
-          path: '/home', element:  <RequireAuth><PaginaPrincipal /></RequireAuth>
-        },
-        {
-          path: '/cadastro', element:  <CadastroDeClientes />
-        },
-        {
-          path: '/doc', element:  <CadastroDeDoc />
-        }
+      return useRoutes([ 
+        {path: '/', element:  <PagDeLogin />},
+        {path: '/home', element:  <RequireAuth><PaginaPrincipal /></RequireAuth>},
+        { path: '/cadastro', element:  <CadastroDeClientes />},
+        { path: '/doc', element:  <CadastroDeDoc />}
       ]);
   
 }
+
 

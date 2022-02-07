@@ -1,6 +1,6 @@
 import { MainRoute } from '../src/Routes/MainRoute';
 
-export  const App = () => {
+const App = () => {
       
   return (
     <div className="">
@@ -11,3 +11,4 @@ export  const App = () => {
       
 }
 
+export default App;

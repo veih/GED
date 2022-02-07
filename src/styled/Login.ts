@@ -85,7 +85,7 @@ body {
 
   button {
     font-size: 10px;
-    margin-left: -4px;
+    margin-left: 9px;
     display: inline;
     width: 80px;
     margin-top: 20px;
