@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { CadDoc } from "../styled/CadDoc";
 
-export const CadastroDeDoc = () => {
+
+export  const CadastroDeDoc = () => {
     return (
         <CadDoc>
             <nav className="container">
                 <div>
                     <div className="brand-title">
-                        <p>GED CADASTRO DE DOC</p>
+                        <p>CADASTRO DE DOCUMENTOS</p>
                     
                     </div>
                 </div>

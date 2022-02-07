@@ -3,27 +3,16 @@ import styled from 'styled-components';
 
 export const CadDoc = styled.div`
 
-body {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2rem;
-  background: #ecf0f3;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  place-items: center;
-  
-}
 
 .container {
   margin: 2rem;
   display: inline-table;
   position: relative;
-  width: 350px;
-  height: 470px;
+  width: 100vh;
+  height: 80vh;
   border-radius: 20px;
   padding: 40px;
-  box-sizing: border-box;
+  
   background: #ecf0f3;
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
