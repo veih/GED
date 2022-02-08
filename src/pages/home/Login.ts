@@ -84,13 +84,13 @@ body {
   }
 
   button {
-    font-size: 10px;
+    font-size: 9px;
     margin-left: 9px;
     display: inline;
-    width: 80px;
-    margin-top: 20px;
+    width: 70px;
+    margin-top: 45px;
     background: #1DA1F2;
-    height: 40px;
+    height: 35px;
     border-radius: 13px;
     cursor: pointer;
     font-weight: 900;
@@ -99,8 +99,11 @@ body {
   }
   
   button:hover {
+    font-size: 11px;
     box-shadow: none;
     background-color: #5984bd;
+    width: 85px;
+    height: 50px;
   }
 
 `;
