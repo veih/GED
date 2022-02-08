@@ -6,7 +6,8 @@ export const CadastroDeClientes = () => {
 	return (
 		<Cadastro>
 			
-			<div className="container"><p>LOGIN-GED</p>
+			<div className="container">
+				<p className="p">CADASTRO-GED</p>
 	
 				<nav>
 									E-MAIL
@@ -17,19 +18,13 @@ export const CadastroDeClientes = () => {
 					<input type="password" placeholder="Minimo 6 caracteres" pattern="^(?=.*\d).{4,8}$" title="A senha teve conter letras e (4 a 8) numeros, não devera conter caracteres." required/>
 					<label>CONFIRMAR SENHA</label>
 					<input type="password" placeholder="Minimo 6 caracteres" pattern="^(?=.*\d).{4,8}$" title="A senha teve conter letras e (4 a 8) numeros, não devera conter caracteres. " required/>
-					<Link to="file:///C:/Users/Desktop/Desktop/Sua-vida/GED/interface/tela-principal.html"
-                            style={{paddingLeft: 13, textDecoration: 'none'}}>
                                     
-                            <button className="buttonLogin" type="submit">LOGIN</button>
-                            </Link>
-                            <Link to="https://www.workplace.com/work/landing/input/"
-                            style={{paddingLeft: 13, textDecoration: 'none'}}>
-                            <button className="button" type="submit">WORDPLACE</button>
-                            </Link> 
-                            <Link to="https://sso.godaddy.com/?domain=masterworksdesign.com&realm=pass&app=o365&client-request-id=5029a657-09d2-02d4-a436-bab13efbc2a3&username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAY1RPYjTYADN1_Ri21MsouLmIS56pMn35a8JKPbXux6lpbSXqyAlSZM01yZfmqSN3uZ2k9zgdKOKQzedtJM43lTE6QZxPJzESXCx5RY3fcPjwVvez10S5qBymz0HoldMs5YFacNcqb8QXMlk1Td3mp_TXxKvxfnb-78_vToG11wtjMwgxsEw7JuhY3s5A7szcHMQRX6oMAyeRCOMhzlsWY5hrkwGxxrzHoAFAGcAzBKSyEmSzAq8KPAy5FiUhzmRNTXUR3la75syzYsST8u8tEwlaaypQ4TEPDxNXG4UJtEArQgHzoH5M5G2cOD2fBxGx-QhKBvTYtmo2-VKsaWVdL9QaneNdsHAoeQUdyZjFePKSK_RDf1Jj5a73XqMuNjCrRhVR21P3A-rD0tQbVQae_buQXG_P2x3hNIwnlS6dUnVY9Mu2g5qbpkjLqjlXXvsSdt7YluOdhE39QK150U9IWh0mjPyvxZ-R1LLeVzsnZAU9k3P6S-S4FsSfE9eZEkllcpkiRvEBvErCV6uLc94cX0PIvXDg2dfN9cfPx8TJ2vMQPN132_V2WbQQVvCjs07sFyYlrerT2scP5GLPNycWr7LlOr3kAKPKHBEUXMqnSKzxC2y1IRnFPhBgcMLxDz9rwdPM1cRi5aFII3kDYgUlleg8GixDj5eIv4A0#"
-                            style={{paddingLeft: 13, textDecoration: 'none'}}>
-                            <button className="button" type="submit">OFFICE 365</button>
-                            </Link>  	
+                        <button className="buttonLogin" type="submit">LOGIN</button>
+
+                        <button className="button" type="submit">WORDPLACE</button>
+
+                        <button className="button" type="submit">OFFICE 365</button>
+                             	
 				</nav>
 			</div>
 		</Cadastro>

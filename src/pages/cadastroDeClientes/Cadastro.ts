@@ -28,7 +28,7 @@ body {
   p {
       margin-top: 2rem;
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 25px;
       color: #1DA1F2;
       letter-spacing: 1px;
   }
@@ -81,13 +81,14 @@ body {
   }
 
   button {
-    font-size: 10px;
-    margin-left: -4px;
+    margin-right: 7px;
+    font-size: 9px;
+    margin-left: 7px;
     display: inline;
-    width: 80px;
-    margin-top: 20px;
+    width: 70px;
+    margin-top: 42px;
     background: #1DA1F2;
-    height: 40px;
+    height: 35px;
     border-radius: 13px;
     cursor: pointer;
     font-weight: 900;
@@ -96,8 +97,11 @@ body {
   }
   
   button:hover {
+    font-size: 11px;
     box-shadow: none;
     background-color: #5984bd;
+    width: 85px;
+    height: 50px;
   }
 
 

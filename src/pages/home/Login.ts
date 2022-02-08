@@ -31,7 +31,7 @@ body {
   p {
       margin-top: 2rem;
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 25px;
       color: #1DA1F2;
       letter-spacing: 1px;
   }
@@ -84,8 +84,9 @@ body {
   }
 
   button {
+    margin-right: 7px;
     font-size: 9px;
-    margin-left: 9px;
+    margin-left: 7px;
     display: inline;
     width: 70px;
     margin-top: 45px;

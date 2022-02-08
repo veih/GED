@@ -5,7 +5,7 @@ export const CadDoc = styled.div`
 
 
 .container {
-  margin: 2rem;
+  margin: auto;
   display: inline-table;
   position: relative;
   width: 100vh;
