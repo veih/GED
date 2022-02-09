@@ -19,7 +19,8 @@ export const PagOfLogin = () => {
 
     return (
         <Login>
-            <div className="container"><p>LOGIN-GED</p>
+            <body>
+                <div className="container"><p>LOGIN-GED</p>
                 <div className="brand-title"> </div>
                     
                     <div className="inputs">
@@ -36,6 +37,8 @@ export const PagOfLogin = () => {
                                    
                     </div>
                 </div>
+            </body>
+            
         </Login>
         
     );

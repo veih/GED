@@ -1,29 +1,44 @@
+import { Link } from "react-router-dom";
+import { PagPrincipal } from "./PagPrincipal";
+
 
 
 export const PaginaPrincipal = () => {
     return (
-            <div>
-                <header className=''>
-                    <h1>Bem vindo ou GED </h1> 
-                </header>
+            <PagPrincipal>
                 <body>
+                    
                     <nav className="container">
-                        <div className="brand-logo"></div>
-                        <header>
+                        <p>GED</p>  <input type="submit" value="Pesquisa" />
+                        <header className="ged">
                             
-                            <div className="brand-title">
-                                
-                                <div className="brand-title"></div>  
-                                    <p> 
-                                        GED 
-                                    </p> 
-                            </div>
+                        <div>
+                            <ul>
+                                <li>Arquivos</li>
+                                <li>Arquivos</li>
+                                <li>Arquivos</li>
+                                <li>Arquivos</li>
+                            </ul> 
+
+                           
+                        
+                            
+                          <hr/> 
+                        </div>
+                            
                         </header>
+
                         <section>
                 
                         </section>
+
                     </nav>
+
+                    <footer>
+
+                    </footer>
                 </body>
-            </div>
+            </PagPrincipal>
+            
     );
 }

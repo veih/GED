@@ -2,17 +2,15 @@
 import styled from 'styled-components';
 
 export const Login = styled.div`
-
 body {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2rem;
-  background: #ecf0f3;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  place-items: center;
-  
+margin-right: auto;
+margin-left: auto;
+height: 100vh;
+background: #ecf0f3;
+display: flex;
+text-align: center;
+justify-content: center;
+place-items: center;
 }
 
 .container {
@@ -84,9 +82,9 @@ body {
   }
 
   button {
-    margin-right: 7px;
+    margin-right: 6px;
     font-size: 9px;
-    margin-left: 7px;
+    margin-left: 6px;
     display: inline;
     width: 70px;
     margin-top: 45px;
