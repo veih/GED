@@ -136,6 +136,15 @@ export const PagPrincipal = styled.div`
     width: 85px;
     height: 50px;
   }
+  main {
+    height: 430px;
+  }
+
+  footer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
 
 
 `;
