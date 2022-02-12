@@ -1,7 +1,7 @@
 import {useRoutes} from 'react-router-dom';
 import { PagOfLogin } from '../pages/home/PagOfLogin';
 import { PaginaPrincipal } from '../pages/home/PaginaPrincipal';
-import { CadastroDeClientes } from '../pages/cadastroDeClientes/CadastroDeClientes';
+import { CadastroDeClientes } from '../pages/cadastroDeClientes/index';
 import { CadastroDeDoc } from '../pages/cadastroDeDocomentos/CadastroDeDoc';
 import { RequireAuth } from '../pages/RequireAuth';
 

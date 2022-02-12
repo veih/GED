@@ -1,5 +1,5 @@
 
-import { Cadastro } from "./Cadastro";
+import { Cadastro } from "./style";
 import { Link } from "react-router-dom";
 
 export const CadastroDeClientes = () => {

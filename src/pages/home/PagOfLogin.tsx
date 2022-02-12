@@ -29,11 +29,11 @@ export const PagOfLogin = () => {
                         <label>SENHA</label>
                         <input className="inputEmail" type="password" placeholder="Minimo 6 caracteres" pattern="^(?=.*\d).{4,8}$" title="A senha teve conter letras e (4 a 8) numeros, não devera conter caracteres." required/>
                                     
-                            <button onClick={handLeClickLogin} className="buttonLogin" type="submit">LOGIN</button>
+                        <button onClick={handLeClickLogin} className="buttonLogin" type="submit">LOGIN</button>
                            
-                            <button onClick={handLeClickWordplace} className="button" type="submit">WORDPLACE</button>
+                        <button onClick={handLeClickWordplace} className="button" type="submit">WORDPLACE</button>
                             
-                            <button onClick={handLeClickOffice} className="button" type="submit">OFFICE 365</button>
+                        <button onClick={handLeClickOffice} className="button" type="submit">OFFICE 365</button>
                                    
                     </div>
                 </div>
