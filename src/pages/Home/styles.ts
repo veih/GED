@@ -23,38 +23,7 @@ export const PagPrincipal = styled.div`
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   }
-  p {
-    margin-top: -15px;
-    margin-bottom: 59px;
-    width: 70px;
-    border-radius: 10px;
-    font-weight: 900;
-    font-size: 20px;
-    color: #ec5c36;
-    box-shadow: 14px 14px 16px #cbced1, -14px -14px 40px #e0dddd;
-    text-align: center;
-    display: -ms-flexbox;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-   ul {
-    display: flex;
-   }
-
-   li {
-    margin: 9px;
-   }
-   ul li {
-    border-radius: 10px;
-    padding: 4px;
-    color: #ec5c36;
-    list-style-type: none;
-    margin-top: -30px;
-    box-shadow: 14px 14px 16px #cbced1, -14px -14px 40px white;
-   }
+  
    hr {
     background: #ec5c36;
     margin: 5px;

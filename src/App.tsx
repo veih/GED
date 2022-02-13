@@ -1,4 +1,4 @@
-import { MainRoute } from './Routes/MainRoute';
+import { MainRoute } from './pages/Routes/MainRoute';
 import { FormProvider } from './contexts/FormContext';
 
 

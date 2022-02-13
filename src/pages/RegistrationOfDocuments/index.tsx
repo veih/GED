@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { CadDoc } from "./style";
 
 
-export  const CadastroDeDoc = () => {
+export  const RegistrationOfDocuments = () => {
     return (
         <CadDoc>
             <nav className="container">

@@ -1,15 +1,19 @@
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
+
 import { PagPrincipal } from "./styles";
+
+import { Header } from "../../components/Header";
 
 export const Home = () => {
     return (
         <PagPrincipal>
-            <nav>
+        <nav className="container">
+            <div className="brand-logo"></div>
                 <Header />
-              
-                <Footer />
-            </nav>
+            <div className="brand-title">
+ 
+                   
+            </div>
+        </nav>
         
         </PagPrincipal>            
             

@@ -3,8 +3,20 @@ import * as C from './styles';
 export const Header = () => {
     return (
         <C.Container>
-            <h1>Cadastro de Desenvolvedor</h1>
-            <p>Faça seu cadastro na lista e receba um emprego instantaneamente.</p>
+            <div className='header'>
+              <p>GED</p>
+              <ul>
+                  <li>Archives</li>
+                  <li>Documents</li>
+                  <li>Registers</li>
+                  <li>Notes</li>
+              </ul>
+              <input className='input' type="text" placeholder='Pesquisa'/>
+                
+               
+            </div>
+            
+
         </C.Container>
     );
 }

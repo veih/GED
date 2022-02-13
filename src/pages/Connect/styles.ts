@@ -87,7 +87,6 @@ body {
     display: inline;
     width: 70px;
     margin-top: 45px;
-    background: #1DA1F2;
     height: 35px;
     border-radius: 13px;
     cursor: pointer;
@@ -97,9 +96,10 @@ body {
   }
   
   button:hover {
+    color: #fff;
     font-size: 11px;
     box-shadow: none;
-    background-color: #ffff00;
+    background-color: #1DA1F2;
     width: 85px;
     height: 50px;
   }

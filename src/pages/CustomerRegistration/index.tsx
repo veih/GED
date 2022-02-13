@@ -2,7 +2,7 @@
 import { Cadastro } from "./style";
 import { Link } from "react-router-dom";
 
-export const CadastroDeClientes = () => {
+export const CustomerRegistration = () => {
 	return (
 		<Cadastro>
 			
