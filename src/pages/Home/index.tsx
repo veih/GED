@@ -1,5 +1,5 @@
 
-import { PagPrincipal } from "./styles";
+import { PagPrincipal } from "./style";
 
 import { Header } from "../../components/Header";
 

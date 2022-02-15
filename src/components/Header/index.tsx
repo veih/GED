@@ -15,7 +15,6 @@ export const Header = () => {
                 
                
             </div>
-            
 
         </C.Container>
     );

@@ -1,4 +1,4 @@
-import { NotFounds } from "./styles";
+import { NotFounds } from "./style";
 
 export const NotFound = () => {
     return(

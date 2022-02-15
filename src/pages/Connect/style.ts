@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-export const StyleLogin = styled.div`
+export const Stylelogin = styled.div`
 body {
   margin: -8px;
   height: 100vh;

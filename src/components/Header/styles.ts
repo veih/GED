@@ -48,7 +48,7 @@ p {
     color: #fff;
     font-size: 11px;
     box-shadow: none;
-    background-color: #5984bd;
+    background-color: #1DA1F2;
     width: 85px;
     height: 30px;
     font-size: 15px;

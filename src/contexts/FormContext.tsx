@@ -1,14 +1,12 @@
 // Context, Reducer, Provider, Hook
 import { createContext, ReactNode, useContext, useReducer } from 'react';
 
-
 type State = {
     currentStep: number;
     name: string;
-    level: 0 | 1;
+    password: any
     email: string;
     github: string;
-    password: any;
 }
 type Action = {
     type: FormActions;
@@ -25,20 +23,19 @@ type FormProviderProps = {
 const initialData: State = {
     currentStep: 0,
     name: '',
-    level: 0,
     email: '',
     github: '',
-    password: '',
+    password: ''
 }
 
 // Context
 const FormContext = createContext<ContextType | undefined>(undefined);
 
 // Reducer
+
 export enum FormActions {
     setCurrentStep,
     setName,
-    setLevel,
     setEmail,
     setGithub,
     setPassword
@@ -49,12 +46,10 @@ const formReducer = (state: State, action: Action) => {
             return {...state, currentStep: action.payload};
         case FormActions.setName:
             return {...state, name: action.payload};
-        case FormActions.setLevel:
-            return {...state, level: action.payload};
+        case FormActions.setPassword:
+            return {...state, password: action.payload};
         case FormActions.setEmail:
             return {...state, email: action.payload};
-            case FormActions.setPassword:
-            return {...state, password: action.payload};
         case FormActions.setGithub:
             return {...state, github: action.payload};
         default:

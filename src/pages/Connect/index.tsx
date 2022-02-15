@@ -1,9 +1,7 @@
-import { StyleLogin } from "./styles";
-import { useState } from "react";
+import { Stylelogin } from "../Connect/style";
 import { useNavigate } from "react-router-dom";
-import { useForm, FormActions,FormProvider, } from '../../contexts/FormContext';
 import { ChangeEvent, useEffect } from 'react';
-
+import { FormActions, useForm } from "../../contexts/FormContext";
 
 export const Connect = () => {
         const navigate = useNavigate();
@@ -16,13 +14,14 @@ export const Connect = () => {
             });
         }, []);
         const handleNextStep = () => {
-            if(state.email !== '' && state.password !== '') {
+            if(state.email !== '') {
                 navigate('/home');
             } else {
                 alert("Preencha os dados.");
             }   
               
-        } 
+        }   
+              
         const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch({
                 type: FormActions.setEmail,
@@ -38,7 +37,7 @@ export const Connect = () => {
         }
 
     return (
-        <StyleLogin>
+        <Stylelogin>
             <body>
                 <div className="container"><p>LOGIN-GED</p>
                 <div className="brand-title"> </div>
@@ -58,9 +57,7 @@ export const Connect = () => {
                         />
                         <label>SENHA</label>
                         <input 
-                            className="inputEmail" 
                             type="password"
-                            autoFocus
                             value={state.password}
                             onChange={handlePasswordChange} 
                             placeholder="Minimo 4 caracteres"
@@ -79,7 +76,7 @@ export const Connect = () => {
                 </div>
             </body>
             
-        </StyleLogin>
+        </Stylelogin>
     );   
     
 }
