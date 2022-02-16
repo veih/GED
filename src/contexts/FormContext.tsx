@@ -4,7 +4,7 @@ import { createContext, ReactNode, useContext, useReducer } from 'react';
 type State = {
     currentStep: number;
     name: string;
-    password: any
+    password: string;
     email: string;
     github: string;
 }
@@ -25,7 +25,7 @@ const initialData: State = {
     name: '',
     email: '',
     github: '',
-    password: ''
+    password: '' 
 }
 
 // Context

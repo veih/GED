@@ -14,13 +14,31 @@ export const Connect = () => {
             });
         }, []);
         const handleNextStep = () => {
-            if(state.email !== '') {
+            if(state.password !== '' && state.email !== '' ) {
                 navigate('/home');
             } else {
                 alert("Preencha os dados.");
             }   
               
-        }   
+        } 
+        
+        const handleWordplaceStep = () => {
+            if(state.password !== '' && state.email !== '' ) {
+                navigate('/home');
+            } else {
+                alert("Preencha os dados.");
+            }   
+              
+        }  
+
+        const handleOfficeStep = () => {
+            if(state.password !== '' && state.email !== '' ) {
+                navigate('/home');
+            } else {
+                alert("Preencha os dados.");
+            }   
+              
+        }  
               
         const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch({
@@ -42,7 +60,7 @@ export const Connect = () => {
                 <div className="container"><p>LOGIN-GED</p>
                 <div className="brand-title"> </div>
                     
-                    <div className="inputs">
+                    <form className="inputs">
                         <label>E-MAIL</label>
                         <input
                             type="email" 
@@ -65,14 +83,12 @@ export const Connect = () => {
                             title="A senha teve conter letras e (4 a 8) numeros, não devera conter caracteres." 
                             required
                         />
-                                    
-                        
                            
-                        <button onClick={handleNextStep} className="button" type="submit">WORDPLACE</button>
+                        <button onClick={handleWordplaceStep} className="button" type="submit">WORDPLACE</button>
                         <button  onClick={handleNextStep} className="buttonLogin" type="submit">LOGIN</button>
-                        <button onClick={handleNextStep} className="button" type="submit">OFFICE 365</button>
+                        <button onClick={handleOfficeStep} className="button" type="submit">OFFICE 365</button>
                                    
-                    </div>
+                    </form>
                 </div>
             </body>
             
