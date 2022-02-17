@@ -1,58 +1,33 @@
 import { Stylelogin } from "../Connect/style";
 import { useNavigate } from "react-router-dom";
-import { ChangeEvent, useEffect } from 'react';
-import { FormActions, useForm } from "../../contexts/FormContext";
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { AuthContext } from "../../contexts/Auth/AuthContext";
 
 export const Connect = () => {
-        const navigate = useNavigate();
-        const { state, dispatch } = useForm();
-    
-        useEffect(() => {
-            dispatch({
-                type: FormActions.setCurrentStep,
-                payload: 1
-            });
-        }, []);
-        const handleNextStep = () => {
-            if(state.password !== '' && state.email !== '' ) {
-                navigate('/home');
-            } else {
-                alert("Preencha os dados.");
-            }   
-              
-        } 
-        
-        const handleWordplaceStep = () => {
-            if(state.password !== '' && state.email !== '' ) {
-                navigate('/home');
-            } else {
-                alert("Preencha os dados.");
-            }   
-              
-        }  
+    const auth = useContext(AuthContext);
+    const navigate = useNavigate();
 
-        const handleOfficeStep = () => {
-            if(state.password !== '' && state.email !== '' ) {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
+        setEmail(event.target.value);
+    }
+
+    const handlePasswordInput = (event: ChangeEvent<HTMLInputElement>) => {
+        setPassword(event.target.value);
+    }
+
+    const handleLogin = async () => {
+        if (email && password) {
+            const isLogged = await auth.signin(email, password);
+            if (isLogged) {
                 navigate('/home');
             } else {
-                alert("Preencha os dados.");
-            }   
-              
-        }  
-              
-        const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
-            dispatch({
-                type: FormActions.setEmail,
-                payload: e.target.value
-            });
+                alert("Não deu certo.");
+            }
         }
-
-        const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
-            dispatch({
-                type: FormActions.setPassword,
-                payload: e.target.value
-            });
-        }
+    }
 
     return (
         <Stylelogin>
@@ -63,10 +38,10 @@ export const Connect = () => {
                     <form className="inputs">
                         <label>E-MAIL</label>
                         <input
-                            type="email" 
+                            type="text" 
                             autoFocus
-                            value={state.email}
-                            onChange={handleEmailChange} 
+                            value={email}
+                            onChange={handleEmailInput} 
                             className="inputEmail" 
                             placeholder="exemplo@teste.com" 
                             pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" 
@@ -76,17 +51,17 @@ export const Connect = () => {
                         <label>SENHA</label>
                         <input 
                             type="password"
-                            value={state.password}
-                            onChange={handlePasswordChange} 
+                            value={password}
+                            onChange={handlePasswordInput} 
                             placeholder="Minimo 4 caracteres"
                             pattern="^(?=.*\d).{4,8}$" 
                             title="A senha teve conter letras e (4 a 8) numeros, não devera conter caracteres." 
                             required
                         />
                            
-                        <button onClick={handleWordplaceStep} className="button" type="submit">WORDPLACE</button>
-                        <button  onClick={handleNextStep} className="buttonLogin" type="submit">LOGIN</button>
-                        <button onClick={handleOfficeStep} className="button" type="submit">OFFICE 365</button>
+                        <button onClick={handleLogin} className="button" type="submit">WORDPLACE</button>
+                        <button  onClick={handleLogin} className="buttonLogin" type="submit">LOGIN</button>
+                        <button onClick={handleLogin} className="button" type="submit">OFFICE 365</button>
                                    
                     </form>
                 </div>

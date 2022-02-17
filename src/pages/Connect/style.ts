@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Stylelogin = styled.div`
 body {
-  margin: -8px;
   height: 100vh;
   background: #ecf0f3;
   display: flex;

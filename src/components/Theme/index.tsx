@@ -2,7 +2,6 @@ import { ReactNode } from 'react';
 import * as C from './styles';
 import { Header } from '../Header';
 import { SidebarItem } from '../SidebarItem';
-import { useForm } from '../../contexts/FormContext';
 
 type Props = {
     children: ReactNode;
@@ -51,4 +50,8 @@ export const Theme = ({ children }: Props) => {
             </C.Area>
         </C.Container>
     );
+}
+
+function useForm(): { state: any; } {
+    throw new Error('Function not implemented.');
 }
