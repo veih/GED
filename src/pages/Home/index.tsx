@@ -2,21 +2,17 @@
 import { PagPrincipal } from "./style";
 
 import { Header } from "../../components/Header";
+import { AuthContext } from "../../contexts/Auth/AuthContext";
+import { useContext } from "react";
+import { Butao } from "../../components/Button";
 
 export const Home = () => {
     return (
-        <PagPrincipal>
-        <nav className="container">
-            <div className="brand-logo"></div>
-                <Header />
-            <div className="brand-title">
- 
-                   
-            </div>
+       
+        <nav>
+            <Header />
+            <Butao/>
         </nav>
-        
-        </PagPrincipal>            
-            
-            
+  
     );
 }

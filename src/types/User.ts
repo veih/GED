@@ -4,3 +4,6 @@ export type User = {
     email: string;
     password?: string;
 }
+export type Botao = {
+    button: JSX.IntrinsicElements;
+}

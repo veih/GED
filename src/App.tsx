@@ -5,9 +5,9 @@ import { MainRoute } from './pages/Routes/MainRoute';
 
 const App = () => {
   return (
-    
+    <div>
       <MainRoute />
-
+    </div>
   );
 }
 

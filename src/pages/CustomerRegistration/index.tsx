@@ -1,12 +1,12 @@
 
 import { Cadastro } from "./style";
-import { useBootstrapPrefix } from "react-bootstrap/esm/ThemeProvider";
 import { Link } from "react-router-dom";
+import { Butao } from "../../components/Button";
 
 export const CustomerRegistration = () => {
 	return (
       <div>
-        
-      </div>
-	);
+         <Butao/>
+       </div>
+   );
 }

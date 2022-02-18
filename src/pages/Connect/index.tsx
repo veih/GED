@@ -1,6 +1,6 @@
 import { Stylelogin } from "../Connect/style";
 import { useNavigate } from "react-router-dom";
-import { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useState } from 'react';
 import { AuthContext } from "../../contexts/Auth/AuthContext";
 
 export const Connect = () => {
@@ -44,8 +44,6 @@ export const Connect = () => {
                             onChange={handleEmailInput} 
                             className="inputEmail" 
                             placeholder="exemplo@teste.com" 
-                            pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" 
-                            title="Expressão de e-mail simples. Não permite números no nome de domínio e não permite domínios de nível superior com menos de 2 ou mais de 3 letras (o que é bom até que eles permitam mais). Não lida com vários &quot;.&quot; no domínio (joe@abc.co.uk)." 
                             required
                         />
                         <label>SENHA</label>
@@ -54,14 +52,11 @@ export const Connect = () => {
                             value={password}
                             onChange={handlePasswordInput} 
                             placeholder="Minimo 4 caracteres"
-                            pattern="^(?=.*\d).{4,8}$" 
-                            title="A senha teve conter letras e (4 a 8) numeros, não devera conter caracteres." 
                             required
                         />
                            
-                        <button onClick={handleLogin} className="button" type="submit">WORDPLACE</button>
                         <button  onClick={handleLogin} className="buttonLogin" type="submit">LOGIN</button>
-                        <button onClick={handleLogin} className="button" type="submit">OFFICE 365</button>
+                        
                                    
                     </form>
                 </div>

@@ -6,21 +6,15 @@ import { RegistrationOfDocuments } from '../RegistrationOfDocuments';
 import { NotFound } from '../NotFou/NotFou';
 import { AuthContext } from '../../contexts/Auth/AuthContext';
 import { useContext } from 'react';
+import { RequireAuth } from '../../contexts/Auth/RequireAuth';
 
  export const MainRoute = () => {
 
-  const auth = useContext(AuthContext);
-
-  const handleLogout = async () => {
-    await auth.signout();
-    window.location.href = window.location.href;
-  }
-
       return useRoutes([ 
         {path: '/', element:  <Connect />},
-        {path: '/home', element:  <Home />},
-        {path: '/cadastro', element:  <CustomerRegistration />},
-        {path: '/doc', element:  <RegistrationOfDocuments />},
+        {path: '/home', element:  <RequireAuth><Home/></RequireAuth>},
+        {path: '/cadastro', element: <RequireAuth><CustomerRegistration /></RequireAuth> },
+        {path: '/doc', element: <RequireAuth><RegistrationOfDocuments /></RequireAuth> },
         {path: "*", element: <NotFound />}
       ]);
   
