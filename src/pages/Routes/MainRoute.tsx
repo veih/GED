@@ -4,6 +4,8 @@ import { Home } from '../Home';
 import { CustomerRegistration } from '../CustomerRegistration';
 import { RegistrationOfDocuments } from '../RegistrationOfDocuments';
 import { NotFound } from '../NotFou/NotFou';
+import { AuthContext } from '../../contexts/Auth/AuthContext';
+import { useContext } from 'react';
 import { RequireAuth } from '../../contexts/Auth/RequireAuth';
 
  export const MainRoute = () => {

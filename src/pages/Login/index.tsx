@@ -10,10 +10,6 @@ export const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value);
-    }
-
     const handlePasswordInput = (event: ChangeEvent<HTMLInputElement>) => {
         setPassword(event.target.value);
     }
@@ -24,7 +20,7 @@ export const Login = () => {
             if (isLogged) {
                 navigate('/home');
             } else {
-                alert("Não deu certo.");
+                navigate("/cadastro");
             }
         }
     }
@@ -41,7 +37,7 @@ export const Login = () => {
                             type="text" 
                             autoFocus
                             value={email}
-                            onChange={handleEmailInput} 
+                            onChange={e => setEmail(e.target.value)} 
                             className="inputEmail" 
                             placeholder="exemplo@teste.com" 
                             required
@@ -50,7 +46,7 @@ export const Login = () => {
                         <input 
                             type="password"
                             value={password}
-                            onChange={handlePasswordInput} 
+                            onChange={e => setPassword(e.target.value)} 
                             placeholder="Minimo 4 caracteres"
                             required
                         />

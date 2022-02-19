@@ -6,11 +6,11 @@ import { AuthContext } from "../../contexts/Auth/AuthContext";
 import { useContext } from "react";
 
 export const Home = () => {
+    const Auth = useContext(AuthContext);
+
     return (
-       
         <PagPrincipal>
             <Header />
         </PagPrincipal>
-  
     );
 }

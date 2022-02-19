@@ -83,9 +83,8 @@ export const PagPrincipal = styled.div`
   }
   
   button {
-    margin-right: 7px;
     font-size: 9px;
-    margin-left: 7px;
+    margin: 0px 0px 15px 15px;
     display: inline;
     width: 70px;
     background: #1DA1F2;
