@@ -1,9 +1,9 @@
-import { Stylelogin } from "../Connect/style";
+import { Stylelogin } from "./style";
 import { useNavigate } from "react-router-dom";
 import { ChangeEvent, useContext, useState } from 'react';
 import { AuthContext } from "../../contexts/Auth/AuthContext";
 
-export const Connect = () => {
+export const Login = () => {
     const auth = useContext(AuthContext);
     const navigate = useNavigate();
 

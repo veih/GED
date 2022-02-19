@@ -86,7 +86,6 @@ body {
     margin-left: 7px;
     display: inline;
     width: 70px;
-    margin-top: 42px;
     background: #1DA1F2;
     height: 35px;
     border-radius: 13px;
